@@ -61,6 +61,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer garlic.Close()
 	ln, err := garlic.Listen()
 	if err != nil {
 		panic(err)
