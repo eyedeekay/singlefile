@@ -65,6 +65,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer ln.Close()
 	if *serveString != "" {
 		bytes := []byte(*serveString)
 		sb := &serveBytes{
