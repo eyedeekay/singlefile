@@ -23,7 +23,7 @@ func help() string {
 
 func usage() string {
 	formattedString := fmt.Sprintf(
-		"%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",
+		"%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s",
 		"# SingleFile",
 		"",
 		"Serve one file over an I2P service, automatically, on all paths",
@@ -38,7 +38,7 @@ func usage() string {
 
 func printUsage() {
 	formattedString := usage()
-	fmt.Println(formattedString)
+	fmt.Printf("%s", formattedString)
 }
 
 func main() {
